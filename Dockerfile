@@ -25,7 +25,8 @@ RUN apt-get update && apt-get -y install \
   libssl-dev \
   nano \
   perl \
-  wget
+  wget \
+  libgd-dev
 
 # Compile openresty from source.
 RUN \
