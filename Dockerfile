@@ -43,6 +43,8 @@ RUN \
   ln -s /usr/local/openresty/nginx/sbin/nginx /usr/local/bin/nginx && \
   ldconfig
 
+RUN rm /etc/nginx/sites-enabled/default
+
 # Set the working directory.
 WORKDIR /home/openresty
 
