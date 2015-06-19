@@ -33,7 +33,7 @@ RUN \
   tar -xzvf ngx_openresty-*.tar.gz && \
   rm -f ngx_openresty-*.tar.gz && \
   cd ngx_openresty-* && \
-  ./configure --with-pcre-jit --with-ipv6 && \
+  ./configure --with-pcre-jit --with-ipv6 --with-http_image_filter_module && \
   make && \
   make install && \
   make clean && \
